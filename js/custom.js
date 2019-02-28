@@ -16,6 +16,11 @@ $(window).on('load', function () {
 
     });
 
+    // Check if we are meant to go to a specific page on load (coming in from outside of loader)
+    if (window.location.hash != '') {
+        
+      $(window.location.hash.substring(0, window.location.hash.indexOf('-')) + '-btn').trigger("click");
+    }
 });
 
 $(function () {
@@ -90,6 +95,11 @@ $(function () {
     // action a press on the home screen - publications
     $("#home-publications").on("click", function () {
         $("#publications-btn").click();
+    });
+    
+    // action a press on the home screen - events
+    $("#home-events").on("click", function () {
+        $("#events-btn").click();
     });
     
     $(".skill .btn-about a").on("click", function () {
