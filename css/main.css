@@ -619,7 +619,7 @@ section:not(:first-of-type) {
       left: -5px;
       top: 12px;
       z-index: -1; }
-	  
+
 div > a > img {
 	display: none;
 }
@@ -1250,7 +1250,7 @@ section.close-menu {
 
 ===========================================================*/
 .publications .title h1:before {
-  content: 'portfolio'; }
+  content: 'publications'; }
 .publications .shuffle {
   margin-bottom: 40px; }
   .publications .shuffle ul {
